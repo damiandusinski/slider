@@ -56,7 +56,7 @@ nav {
 .slide {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   position: absolute;
   background-size: cover;
@@ -72,9 +72,8 @@ nav {
   font-size: 38px;
 }
 .text {
-  transition: 1s;
-  opacity: 1;
   text-align: center;
+  height: 60%;
 }
 
 .text-content {
@@ -111,15 +110,15 @@ nav {
 
 .slide:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(img/1.jpg);
+    url(img/2.jpg);
 }
 .slide:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(img/2.jpg);
+    url(img/1.jpg);
 }
 .slide:nth-child(3) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(img/2.jpg);
+    url(img/3.jpg);
 }
 
 @media (orientation: landscape) {
@@ -129,5 +128,8 @@ nav {
 
   .slider {
     height: 86vh;
+  }
+  .text {
+    height: 70%;
   }
 }
