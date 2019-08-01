@@ -34,7 +34,6 @@ class Timer {
     );
     this.timer.forEach((item, i) => {
       if (item <= 9) {
-        console.log(typeof item);
         this.timer[i] = "0" + item;
       }
     });
