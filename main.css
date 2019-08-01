@@ -9,7 +9,7 @@
   font-family: "Quicksand", sans-serif;
 }
 
-.top {
+.top-bar {
   padding: 0 20px;
   display: flex;
   flex-direction: row;
@@ -110,11 +110,11 @@ nav {
 
 .slide:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(img/1.jpg);
+    url(img/2.jpg);
 }
 .slide:nth-child(2) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url(img/2.jpg);
+    url(img/1.jpg);
 }
 .slide:nth-child(3) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
@@ -122,7 +122,7 @@ nav {
 }
 
 @media (orientation: landscape) {
-  .top {
+  .top-bar {
     height: 14vh;
   }
 

@@ -40,11 +40,11 @@ class Timer {
   }
 
   showTime() {
+    this.createTime();
+    const time = this.timer.join(":");
+    this.timeContainer.textContent = time;
     this.index = setTimeout(() => {
       this.time -= 1000;
-      this.createTime();
-      const time = this.timer.join(":");
-      this.timeContainer.textContent = time;
       if (this.time > 1000) this.showTime();
     }, 1000);
   }
