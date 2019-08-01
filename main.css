@@ -1,0 +1,143 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.wrapper {
+  background-color: #000;
+  color: #fff;
+  font-family: "Quicksand", sans-serif;
+}
+
+.top {
+  padding: 0 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+  font-size: 22px;
+}
+nav {
+  display: none;
+}
+.nav-icon {
+  position: relative;
+  width: 30px;
+  height: 2px;
+  background-color: #fff;
+}
+
+.nav-icon::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: -8px;
+  background-color: #fff;
+  left: 0;
+}
+.nav-icon::after {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 2px;
+  top: +8px;
+  background-color: #fff;
+  left: 0;
+}
+.slider {
+  width: 100vw;
+  height: 90vh;
+  position: relative;
+  overflow: hidden;
+}
+
+.slide {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  position: absolute;
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 0.7s;
+}
+
+.text-header {
+  text-transform: uppercase;
+  font-size: 38px;
+}
+.text {
+  position: absolute;
+  transition: 1s;
+  opacity: 0;
+  text-align: center;
+}
+
+.text-content {
+  width: 90%;
+  margin: 0 auto;
+  line-height: 1.4;
+}
+.timer {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 30px;
+
+  font-family: "Roboto Mono", monospace;
+
+  color: #eee;
+}
+
+.main-btn {
+  display: block;
+  margin: 10px auto 150px;
+  padding: 10px 30px;
+  width: 180px;
+  border: 1px solid #fff;
+  color: #fff;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+
+.slide.active {
+  opacity: 1;
+}
+.slide.active > .text {
+  opacity: 1;
+}
+
+.slide:nth-child(1) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/1.jpg);
+}
+.slide:nth-child(2) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/2.jpg);
+}
+.slide:nth-child(3) {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
+    url(img/3.jpg);
+}
+
+@media (orientation: landscape) {
+  .main-btn {
+    margin: 10px auto 50px;
+  }
+  .timer {
+    top: 25%;
+  }
+
+  .top {
+    height: 14vh;
+  }
+
+  .slider {
+    height: 86vh;
+  }
+}
