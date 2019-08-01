@@ -64,7 +64,7 @@ nav {
   width: 100%;
   height: 100%;
   opacity: 0;
-  transition: 0.7s;
+  transition: all 0.7s;
 }
 
 .text-header {
@@ -73,7 +73,7 @@ nav {
 }
 .text {
   transition: 1s;
-  opacity: 0;
+  opacity: 1;
   text-align: center;
 }
 
@@ -105,9 +105,9 @@ nav {
 .slide.active {
   opacity: 1;
 }
-.slide.active > .text {
+/* .slide.active > .text {
   opacity: 1;
-}
+} */
 
 .slide:nth-child(1) {
   background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
