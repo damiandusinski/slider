@@ -55,8 +55,9 @@ nav {
 
 .slide {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  align-items: flex-end;
+  align-items: center;
   position: absolute;
   background-size: cover;
   background-position: center;
@@ -71,7 +72,6 @@ nav {
   font-size: 38px;
 }
 .text {
-  position: absolute;
   transition: 1s;
   opacity: 0;
   text-align: center;
@@ -83,10 +83,7 @@ nav {
   line-height: 1.4;
 }
 .timer {
-  position: absolute;
-  top: 30%;
-  left: 50%;
-  transform: translateX(-50%);
+  text-align: center;
   font-size: 30px;
 
   font-family: "Roboto Mono", monospace;
@@ -96,7 +93,7 @@ nav {
 
 .main-btn {
   display: block;
-  margin: 10px auto 150px;
+  margin: 10px auto;
   padding: 10px 30px;
   width: 180px;
   border: 1px solid #fff;
@@ -126,13 +123,6 @@ nav {
 }
 
 @media (orientation: landscape) {
-  .main-btn {
-    margin: 10px auto 50px;
-  }
-  .timer {
-    top: 25%;
-  }
-
   .top {
     height: 14vh;
   }
