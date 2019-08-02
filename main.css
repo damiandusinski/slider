@@ -4,6 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
+html {
+  font-size: 10px;
+}
 .wrapper {
   font-family: "Quicksand", sans-serif;
   color: #fff;
@@ -17,31 +20,12 @@
   align-items: center;
   height: 60px;
   padding: 0 20px;
-  font-size: 22px;
+  font-size: 2.2rem;
 }
 nav {
   display: none;
 }
-.nav-icon {
-  position: relative;
-  width: 30px;
-  height: 2px;
-  background-color: #fff;
-}
 
-.nav-icon::before,
-.nav-icon::after {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 2px;
-  top: -8px;
-  background-color: #fff;
-  left: 0;
-}
-.nav-icon::after {
-  top: +8px;
-}
 .slider {
   position: relative;
   width: 100vw;
@@ -68,7 +52,7 @@ nav {
 
 .slide-header {
   text-transform: uppercase;
-  font-size: 38px;
+  font-size: 3.8rem;
 }
 .slide-container {
   text-align: center;
@@ -78,12 +62,12 @@ nav {
 .slide-content {
   width: 90%;
   margin: 0 auto;
+  font-size: 1.8rem;
   line-height: 1.4;
 }
 .timer {
-  text-align: center;
   font-family: "Roboto Mono", monospace;
-  font-size: 30px;
+  font-size: 3rem;
   color: #eee;
 }
 
@@ -96,6 +80,7 @@ nav {
   color: #fff;
   text-transform: uppercase;
   text-decoration: none;
+  font-size: 1.8rem;
   transition: 0.3s;
 }
 
@@ -124,14 +109,11 @@ nav {
   }
 }
 @media (orientation: landscape) and (min-width: 1024px) {
-  .slide-container {
-    height: 70%;
-  }
   .slide-header {
-    font-size: 44px;
+    font-size: 4.4rem;
   }
   .slide-content {
-    font-size: 24px;
+    font-size: 2.4rem;
     width: 60%;
   }
 }
@@ -139,12 +121,9 @@ nav {
   .slide-container {
     height: 60%;
   }
-  .slide-header {
-    font-size: 44px;
-  }
+
   .slide-content {
-    font-size: 24px;
-    width: 60%;
+    font-size: 2.4rem;
   }
 
   .main-btn:hover {
