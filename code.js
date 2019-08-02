@@ -2,7 +2,7 @@ class Slider {
   constructor() {
     this.slides = document.querySelectorAll(".slide");
     this.indexInterval = 0;
-    this.time = 5000;
+    this.time = 3000;
   }
   nextSlide() {
     this.indexTimeout = setTimeout(() => {
